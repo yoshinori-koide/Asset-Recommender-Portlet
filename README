@@ -15,7 +15,7 @@ How-to-use:
 2. deploy it.
 3. Create some users.
 4. Log in as created user, and rate many blogs(about 10 over entry?).
-5. And change the user, rating, change an usr ,and rating ...
+5. And change the user, rate , change an usr ,and rate ...
 6. Create rating data for recommendation about 50? over records.
 7. If there are enough data, this portlet recommends some blogs.
 8. Default recommedation target is blogs, you could change the target by 'Configuration'.
