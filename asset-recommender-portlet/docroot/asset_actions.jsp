@@ -14,7 +14,7 @@
  */
 %>
 
-<%@ include file="/init.jsp" %>
+<%@ include file="./init.jsp" %>
 
 <%
 boolean showIconLabel = ((Boolean)request.getAttribute("view.jsp-showIconLabel")).booleanValue();

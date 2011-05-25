@@ -14,7 +14,7 @@
  */
 %>
 
-<%@ include file="/init.jsp" %>
+<%@ include file="./init.jsp" %>
 
 <%
 selectionStyle = "dynamic";
@@ -33,7 +33,7 @@ if (!paginationType.equals("none")) {
 }
 %>
 
-<%@ include file="/view_dynamic_list.jspf" %>
+<%@ include file="./view_dynamic_list.jspf" %>
 
 <c:if test='<%= !paginationType.equals("none") && (searchContainer.getTotal() > searchContainer.getResults().size()) %>'>
 	<liferay-ui:search-paginator searchContainer="<%= searchContainer %>" type="<%= paginationType %>" />

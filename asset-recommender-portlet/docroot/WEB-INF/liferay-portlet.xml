@@ -6,6 +6,16 @@
 		<portlet-name>asset-recommender-portlet</portlet-name>
 		<icon>/icon.png</icon>
 		<configuration-action-class>jp.co.projapan.portlet.assetrecommender.action.ConfigurationActionImpl</configuration-action-class>
+		<scheduler-entry>
+			<scheduler-description>CSV Crawler</scheduler-description>
+			<scheduler-event-listener-class>jp.yoshinori.koide.portlet.assetrecommender.util.CSVCrawlerMessageListener</scheduler-event-listener-class>
+			<trigger>
+				<simple>
+					<simple-trigger-value>3</simple-trigger-value>
+					<time-unit>minute</time-unit>
+				</simple>
+			</trigger>
+		</scheduler-entry>
 		<instanceable>true</instanceable>
 		<header-portlet-css>/css/main.css</header-portlet-css>
 		<footer-portlet-javascript>/js/main.js</footer-portlet-javascript>

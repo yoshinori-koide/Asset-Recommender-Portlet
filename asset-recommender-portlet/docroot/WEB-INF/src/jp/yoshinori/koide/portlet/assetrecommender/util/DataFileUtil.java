@@ -9,6 +9,8 @@ import com.liferay.portal.kernel.dao.orm.DynamicQuery;
 import com.liferay.portal.kernel.dao.orm.DynamicQueryFactoryUtil;
 import com.liferay.portal.kernel.dao.orm.RestrictionsFactoryUtil;
 import com.liferay.portal.kernel.exception.SystemException;
+import com.liferay.portal.kernel.log.Log;
+import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.portal.kernel.util.FileUtil;
 import com.liferay.portal.kernel.util.PortalClassLoaderUtil;
 import com.liferay.portal.kernel.util.StringBundler;
@@ -61,6 +63,8 @@ public class DataFileUtil {
 		FileUtil.delete(getCSVFileName(classNameId));
 
 		_dataFiles.remove(new Long(classNameId));
+		
+		_log.info("delete file::"+getCSVFileName(classNameId));
 	}
 	
 	public static String getCSVFileName(long classNameId) {
@@ -69,4 +73,6 @@ public class DataFileUtil {
 	
 	private static String _csvBase = StringPool.BLANK;
 	private static Map<Long, String> _dataFiles = new HashMap<Long,String>();
+
+	private static Log _log = LogFactoryUtil.getLog(DataFileUtil.class);
 }

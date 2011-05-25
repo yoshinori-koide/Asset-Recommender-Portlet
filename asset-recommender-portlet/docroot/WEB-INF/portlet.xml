@@ -9,22 +9,14 @@
 	<portlet>
 		<portlet-name>asset-recommender-portlet</portlet-name>
 		<display-name>Asset Recommender</display-name>
-		<portlet-class>jp.co.projapan.portlet.assetrecommender.AssetRecommenderPortlet</portlet-class>
+		<portlet-class>jp.yoshinori.koide.portlet.assetrecommender.AssetRecommenderPortlet</portlet-class>
 		<init-param>
 			<name>view-jsp</name>
 			<value>/view.jsp</value>
 		</init-param>
 		<init-param>
-			<name>edit-jsp</name>
-			<value>/edit.jsp</value>
-		</init-param>
-		<init-param>
 			<name>csv-base</name>
 			<value>/WEB-INF/csv</value>
-		</init-param>
-		<init-param>
-			<name>deafault-class-name</name>
-			<value>com.liferay.portlet.blogs.model.BlogsEntry</value>
 		</init-param>
 		<expiration-cache>0</expiration-cache>
 		<supports>
