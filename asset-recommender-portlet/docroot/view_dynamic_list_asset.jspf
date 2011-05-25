@@ -48,7 +48,7 @@ for (int assetEntryIndex = 0; assetEntryIndex < results.size(); assetEntryIndex+
 	try {
 %>
 
-		<liferay-util:include portletId="assetrecommenderportlet_WAR_ratingrecommenderportlet" page="/abstracts.jsp" />
+		<liferay-util:include portletId="assetrecommenderportlet_WAR_assetrecommenderportlet" page="/abstracts.jsp" />
 
 <%
 	}

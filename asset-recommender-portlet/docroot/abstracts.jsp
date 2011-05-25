@@ -14,7 +14,7 @@
  */
 %>
 
-<%@ include file="/init.jsp" %>
+<%@ include file="./init.jsp" %>
 
 <%
 List results = (List)request.getAttribute("view.jsp-results");
@@ -58,7 +58,7 @@ viewURL = _checkViewURL(viewURL, currentURL, themeDisplay);
 
 <c:if test="<%= show && assetRenderer.hasViewPermission(permissionChecker) %>">
 	<div class="asset-abstract">
-		<liferay-util:include page="/asset_actions.jsp" />
+		<liferay-util:include portletId="assetrecommenderportlet_WAR_assetrecommenderportlet" page="/asset_actions.jsp" />
 
 		<h3 class="asset-title">
 			<c:choose>
